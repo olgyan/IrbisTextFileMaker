@@ -361,7 +361,7 @@ def save_irbis_text():
                     f.writelines(f'{line}\n'
                                  for line in field.show('irbistext')
                                  if len(line) > 6)
-                f.write('*****')
+                f.write('*****\n')
         app.destroy()
 
 
